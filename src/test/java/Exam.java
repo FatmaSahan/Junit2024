@@ -1,3 +1,4 @@
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,6 +26,10 @@ public class Exam {
 
 
 
+    }
+    @After
+    public void tearDown(){
+        driver.quit();
     }
 
     //            3) Aşağıdaki adları kullanarak 3 test metodu oluşturun ve gerekli testleri yapin
